@@ -18,6 +18,7 @@ app.use(express.urlencoded({ extended: false }))
 
 //Use routes folder
 app.use('/api/goals', require('./routes/goalRoutes'))
+app.use('/api/users', require('./routes/userRoutes'))
 
 //Error Middleware  
 app.use(errorHandler)
